@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        @keyframes cloudmove {
+            0% {background-position: 0 0;}
+            100% {background-position: 1342px 0;}
+        }
+        @keyframes cloudmove2 {
+            0% {background-position: 0 0;}
+            100% {background-position: -999px 0;}
+        }
+        @keyframes tenMove {
+            0% {background-position-x: 0;}
+            10% {background-position-x: -39px;}
+            20% {background-position-x: -78px;}
+            30% {background-position-x: -117px;}
+            40% {background-position-x: -156px;}
+            50% {background-position-x: -195px;}
+            60% {background-position-x: -234px;}
+            70% {background-position-x: -273px;}
+            80% {background-position-x: -312px;}
+            90% {background-position-x: -351px;}
+        }
+        @keyframes twentyMove {
+            0% {background-position-x: 0;}
+            5% {background-position-x: -80px;}
+            10% {background-position-x: -160px;}
+            15% {background-position-x: -240px;}
+            20% {background-position-x: -320px;}
+            25% {background-position-x: -400px;}
+            30% {background-position-x: -480px;}
+            35% {background-position-x: -560px;}
+            40% {background-position-x: -640px;}
+            45% {background-position-x: -720px;}
+            50% {background-position-x: -800px;}
+            55% {background-position-x: -880px;}
+            60% {background-position-x: -960px;}
+            65% {background-position-x: -1040px;}
+            70% {background-position-x: -1120px;}
+            75% {background-position-x: -1200px;}
+            80% {background-position-x: -1280px;}
+            85% {background-position-x: -1360px;}
+            90% {background-position-x: -1440px;}
+            95% {background-position-x: -1520px;}
+        }
+        @keyframes thirtyMove {
+            0% {background-position-x: 0;}
+            3.33% {background-position-x: -80px;}
+            6.66% {background-position-x: -160px;}
+            9.99% {background-position-x: -240px;}
+            13.32% {background-position-x: -320px;}
+            16.65% {background-position-x: -400px;}
+            19.98% {background-position-x: -480px;}
+            23.31% {background-position-x: -560px;}
+            26.64% {background-position-x: -640px;}
+            29.97% {background-position-x: -720px;}
+            33.3% {background-position-x: -800px;}
+            36.63% {background-position-x: -880px;}
+            39.96% {background-position-x: -960px;}
+            43.29% {background-position-x: -1040px;}
+            46.62% {background-position-x: -1120px;}
+            49.95% {background-position-x: -1200px;}
+            53.28% {background-position-x: -1280px;}
+            56.61% {background-position-x: -1360px;}
+            59.94% {background-position-x: -1440px;}
+            63.27% {background-position-x: -1520px;}
+            66.6% {background-position-x: -1600px;}
+            69.93% {background-position-x: -1680px;}
+            73.26% {background-position-x: -1760px;}
+            76.59% {background-position-x: -1840px;}
+            79.92% {background-position-x: -1920px;}
+            83.25% {background-position-x: -2000px;}
+            86.58% {background-position-x: -2080px;}
+            89.91% {background-position-x: -2160px;}
+            93.24% {background-position-x: -2240px;}
+            96.57% {background-position-x: -2320px;}
+        }
+        @keyframes fourtyMove {
+            0% {background-position-x: -0px;}
+            2.5% {background-position-x: -80px;}
+            5% {background-position-x: -160px;}
+            7.5% {background-position-x: -240px;}
+            10% {background-position-x: -320px;}
+            12.5% {background-position-x: -400px;}
+            15% {background-position-x: -480px;}
+            17.5% {background-position-x: -560px;}
+            20% {background-position-x: -640px;}
+            22.5% {background-position-x: -720px;}
+            25% {background-position-x: -800px;}
+            27.5% {background-position-x: -880px;}
+            30% {background-position-x: -960px;}
+            32.5% {background-position-x: -1040px;}
+            35% {background-position-x: -1120px;}
+            37.5% {background-position-x: -1200px;}
+            40% {background-position-x: -1280px;}
+            42.5% {background-position-x: -1360px;}
+            45% {background-position-x: -1440px;}
+            47.5% {background-position-x: -1520px;}
+            50% {background-position-x: -1600px;}
+            52.5% {background-position-x: -1680px;}
+            55% {background-position-x: -1760px;}
+            57.5% {background-position-x: -1840px;}
+            60% {background-position-x: -1920px;}
+            62.5% {background-position-x: -2000px;}
+            65% {background-position-x: -2080px;}
+            67.5% {background-position-x: -2160px;}
+            70% {background-position-x: -2240px;}
+            72.5% {background-position-x: -2320px;}
+            75% {background-position-x: -2400px;}
+            77.5% {background-position-x: -2480px;}
+            80% {background-position-x: -2560px;}
+            82.5% {background-position-x: -2640px;}
+            85% {background-position-x: -2720px;}
+            87.5% {background-position-x: -2800px;}
+            90% {background-position-x: -2880px;}
+            92.5% {background-position-x: -2960px;}
+            95% {background-position-x: -3040px;}
+            97.5% {background-position-x: -3120px;}
+        }
+        html{
+            background-color: #000;
+        }
+        #characterContainer{
+            margin-top: 40px;
+        }
+        .game-area{
+            position: relative;
+            width:1200px; 
+            height: 450px; 
+            background-image: url(sprites/bg.gif); 
+            margin:0 auto;
+        }
+        .thumbsContainer{
+            position:relative;
+            z-index:99;
+            list-style:none;
+            padding-left:10px;
+            margin:6px 10px;
+        }
+        .thumbsContainer li.unavailable{
+            opacity:.4;
+            filter:alpha(opacity=40);
+            cursor:default
+        
+        }
+        figure figcaption{
+            background:#000;
+            opacity:.7;
+            filter:alpha(opacity=70);
+            bottom:0;width:100%;
+            padding:3px 0 5px;
+            position:absolute;
+            font-size:11px;
+            font-weight:bold;
+            color:#fff;
+            text-shadow:1px 1px 1px #000;
+        }
+        figure{
+            margin: 0;
+            padding: 0;
+            position: relative;
+        }
+        .thumbs{
+            width:100px;
+            height:100px;
+            float:left;
+            margin:5px;
+            border:2px solid #000;
+            text-align:center;
+            cursor:pointer;
+            overflow:hidden
+        }
+        .cloud1{
+            width:100%;
+            height:276px;
+            position:absolute;
+            top:-10px;
+            left:0;
+            z-index:5;
+            background:url(sprites/cloud.png) repeat-x;
+            animation-name: cloudmove;
+            animation-duration: 40s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        .star{
+            width:100%;
+            height:100%;
+            position:absolute;
+            z-index:1;
+            left:0;
+            top:0;
+            background:url(sprites/star1.png)
+        }
+        .moon{
+            width:80px;
+            height:80px;
+            position:absolute;
+            z-index:3;
+            right:120px;
+            top:40px;
+            background:url(sprites/moon.png)
+        }
+        .mountain{
+            width: 100%;
+            height: 247px;
+            background-image: url(sprites/foot.png); 
+            position:absolute;
+            left: 0;
+            bottom: 0;
+            z-index: 99999;
+        }
+        .cloud2{
+            width:100%;
+            height:81px;
+            position:absolute;
+            bottom:0;
+            left:0;
+            z-index:999999;
+            background:url(sprites/cloud2.png) repeat-x;
+            animation-name: cloudmove2;
+            animation-duration: 30s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        
+        .character{
+            width:80px;
+            height:100px;
+            position:absolute;
+            text-align:center;
+            z-index:11;
+            animation-timing-function: step-end;
+            animation-iteration-count: infinite;
+            transition-property: left;
+            transition-timing-function: linear;
+        }
+        .btn{
+            width:100px;
+            height:30px;
+            background:#000;
+            border:1px dashed #ccc;
+            color:#ccc;
+            float:left;
+            margin:15px 10px;
+            cursor:pointer;
+            color:#ccc;
+            text-align:center;
+            line-height:30px;
+            font-weight:bold;
+            font-style:italic
+        }
+        #btn{
+            font-size:23px
+        }
+        #reset{
+            font-size:17px
+        }
+        .btn:hover{
+            color:#fff;
+            border:1px dashed #fff;
+        }
+        #timeContainer{
+            width:77px;
+            height:58px;
+            position:absolute;
+            top:10px;
+            right:15px;
+            background:url(sprites/time.png) no-repeat;
+            text-align:center;
+            z-index:50;
+            padding-top:18px;
+        }
+        #time{
+            background:none;
+            border:none;
+            width:100%;
+            text-align:center;
+            font-size:18px;
+            font-weight:bold;
+            color:#000
+        }
+        #timeContainer span{
+            display:block;
+            font-size:12px;
+            font-style:italic;
+            line-height:10px
+        }
+        #cha-1{
+            animation-name: thirtyMove;
+            animation-duration: 0.5s;
+            background:transparent url(sprites/gina.png) 0 0 no-repeat
+        }
+        #cha-2{
+            animation-name: twentyMove;
+            animation-duration: 0.8s;
+            background:transparent url(sprites/ken.png) 0 0 no-repeat
+        }
+        #cha-4{
+            animation-name: twentyMove;
+            animation-duration: 3s;
+            background:transparent url(sprites/lisa.png) 0 0 no-repeat
+        }
+        #cha-6{
+            animation-name: thirtyMove;
+            animation-duration: 1s;
+            background:transparent url(sprites/tom.png) 0 0 no-repeat
+        }
+        #cha-8{
+            animation-name: twentyMove;
+            animation-duration: 3s;
+            background:transparent url(sprites/cindy.png) 0 0 no-repeat
+        }
+        #cha-12{
+            animation-name: fourtyMove;
+            animation-duration: 3.5s;
+            background:transparent url(sprites/oman.png) 0 0 no-repeat
+        }
+        #lamp{
+            transition-property: left;
+            transition-timing-function: linear;
+            animation-name: tenMove;
+            animation-duration: 1s;
+            animation-timing-function: step-end;
+            animation-iteration-count: infinite;
+            width:39px;
+            height:35px;
+            position:absolute;
+            top:222px;
+            z-index:11;
+            background:transparent url(sprites/lamp.png) 0 0 no-repeat
+        }
+        .bg-position-1{
+            background-position-y: 0 !important;
+        }
+        .bg-position-2{
+            background-position-y: -100px !important;
+        }
+        .bg-position-3{
+            background-position-y: -200px !important;
+        }
+        .bg-position-4{
+            background-position-y: -300px !important;
+        }
+        .disabled{
+            filter: brightness(0.3);
+            cursor: not-allowed !important;
+        }
+        .thumbsContainer li.selected {
+            border: 2px solid red;
+        }
+        .thumbsContainer li.selected figcaption{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="game-area">
+        <div class="cloud1"></div>
+        <ul class="thumbsContainer">
+            <li class="thumbs thumb-1 left" data-id="1">
+                <figure>
+                    <img src="sprites/gina.jpg" alt="GINA">
+                    <figcaption>GINA (1 sec)</figcaption>
+                </figure>
+            </li>
+            <li class="thumbs thumb-2 left" data-id="2">
+                <figure>
+                    <img src="sprites/ken.jpg" alt="KEN">
+                    <figcaption>KEN (2 sec)</figcaption>
+                </figure>
+            </li>
+            <li class="thumbs thumb-4 left" data-id="4">
+                <figure>
+                    <img src="sprites/lisa.jpg" alt="LISA">
+                    <figcaption>LISA (4 sec)</figcaption>
+                </figure>
+            </li>
+            <li class="thumbs thumb-6 left" data-id="6">
+                <figure>
+                    <img src="sprites/tom.jpg" alt="TOM">
+                    <figcaption>TOM (6 sec)</figcaption>
+                </figure>
+            </li>
+            <li class="thumbs thumb-8 left" data-id="8">
+                <figure>
+                    <img src="sprites/cindy.jpg" alt="CINDY">
+                    <figcaption>CINDY (8 sec)</figcaption>
+                </figure>
+            </li>
+            <li class="thumbs thumb-12 left" data-id="12">
+                <figure>
+                    <img src="sprites/oman.jpg" alt="OMAN">
+                    <figcaption>OMAN (12 sec)</figcaption>
+                </figure>
+            </li>
+            <li id="btn" class="btn" title="GO!!!">GO!</li>
+            <li id="reset" class="btn" title="Reset Game!">RESET!</li>
+            <div style="clear:both;"></div>
+        </ul>
+        <div id="timeContainer">
+            <input id="time" type="text" value="30">
+            <span>seconds</span>
+        </div>
+        <div id="characterContainer">
+            <div id="cha-1" class="character bg-position-1" data-pos="1" data-point-1="0" data-point-2="1120" style="left: 0;"></div>
+            <div id="cha-2" class="character bg-position-1" data-pos="1" data-point-1="45" data-point-2="1075" style="left: 45px;"></div>
+            <div id="cha-4" class="character bg-position-1" data-pos="1" data-point-1="90" data-point-2="1030" style="left: 90px;"></div>
+            <div id="cha-6" class="character bg-position-1" data-pos="1" data-point-1="135" data-point-2="985" style="left: 135px;"></div>
+            <div id="cha-8" class="character bg-position-1" data-pos="1" data-point-1="180" data-point-2="940" style="left: 180px;"></div>
+            <div id="cha-12" class="character bg-position-1" data-pos="1" data-point-1="225" data-point-2="895" style="left: 225px;"></div>
+            <div id="lamp" data-pos="1"  data-point-1="310" data-point-2="810" style="left: 310px;"></div>
+        </div>
+        <div class="star"></div>
+        <div class="moon"></div>
+        <div class="mountain"></div>
+        <div class="cloud2"></div>
+    </div>
+
+   <script src="app.js"></script>
+</body>
+</html>
